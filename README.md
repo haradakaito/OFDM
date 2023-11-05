@@ -1,15 +1,15 @@
-# OFDM(Orthogonal Frequency Division Multiplexing)
+# OFDM(直交周波数分割多重方式)
 ## OFDMの仕組み・原理
 ### マルチキャリア通信
-### FDM(Frequency Division Multiplexing)
-### OFDM(Orthogonal Frequency Division Multiplexing)
+### FDM(周波数分割多重方式)
+### OFDM(直交周波数分割多重方式)
 
 ## OFDMの実用化
-### QAM(Quadrature Amplitude Modulation)
-### MIMO(Multi Input Multi Output)
+### QAM(直交位相振幅変調)
+### MIMO(マイモ)
 
 ## まとめ・余談
-### OFDM(Orthogonal Frequency Division Multiplexing)
-### TDM(Time Division Multiplexing)
-### CDM(Code Division Multiplexing)
-### NOM(Non-Orthogonal Multiplexing)
+### OFDM(直行周波数分割多重方式)
+### TDM(時間分割多重方式)
+### CDM(符号分割多重方式)
+### NOM(非直行多重方式)
