@@ -1,4 +1,4 @@
-![画像1](https://github.com/haradakaito/OFDM/assets/75819611/bce8ce10-da94-408a-b2f1-fa79ce94855e)# OFDM通信方式
+# OFDM通信方式
 ## 1. OFDMの仕組み・原理
 ### 1.1 マルチキャリア通信
 OFDMはマルチキャリア通信という通信方式に包含される通信規格の一つである.  
