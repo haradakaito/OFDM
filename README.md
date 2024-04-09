@@ -4,12 +4,12 @@
 OFDMはマルチキャリア通信という通信方式に包含される通信規格の一つである.  
 マルチキャリア通信方式とは, 搬送波(キャリア)と呼ばれるデータ伝達に使用される電波を複数用いることで, 同時に複数の通信を実現する通信方式のことである.  
  
-<img align=center width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/ee51f589-39fd-4ac9-a233-777b65ba4d69">
+<img align=center width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/ee51f589-39fd-4ac9-a233-777b65ba4d69">  
  
 搬送波を複数に分割し, 副搬送波(サブキャリア)として多重に送信することで送信速度の向上が期待できる．  
 欠点としては, 周波数の占有帯域が大きくなり通信方式によっては通信効率が悪くなってしまう場合がある.  
 
-<img align=center width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/e7fab41a-5ce0-4c07-9a53-de6c8d6b4217">
+<img align=center width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/e7fab41a-5ce0-4c07-9a53-de6c8d6b4217">  
 
 マルチキャリア通信において分割されたサブキャリアは, 以下の図に示すように，異なる周波数特性を持つように分割される.  
 理想としては, フーリエ変換によって周波数成分を抽出した際に, 特定の周波数成分のみが現れるような電波になることである．  
@@ -21,7 +21,7 @@ OFDMはマルチキャリア通信という通信方式に包含される通信�
 ### 1.2 FDM(周波数分割多重方式)
 まず，OFDMの基本となる多重化方式であるFDMという通信方式について説明する.  
 
-<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/c69b7bc0-f1bf-4e53-9021-23a1a3cfe1a1">
+<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/c69b7bc0-f1bf-4e53-9021-23a1a3cfe1a1">  
 
 FDM方式は，サブキャリアが持つノイズが，他のサブキャリアに影響を与えないように、サブキャリアの間隔を十分に空けて配置する多重化方式である.  
 通信世代としては1Gにあたり, 欠点としては, 占有する周波数帯域が大きくなるという点が挙げられる.  
@@ -32,7 +32,7 @@ FDM方式は，サブキャリアが持つノイズが，他のサブキャリ�
 OFDM(Orthogonal Frequency Division Multiplexing)は日本語訳で"直交周波数分割多重"という意味であり, その名の通りFDMのサブキャリアの配置に直交の性質を利用したものである.  
 ここでいう直交とは, サブキャリア同士が持つノイズのピークが0になる地点に，他のサブキャリア周波数のピークが来るような状態を周波数成分が直交していると言う.  
 
-<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/1d02c02b-d688-478b-9fbb-ac3835688976">
+<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/1d02c02b-d688-478b-9fbb-ac3835688976">  
 
 原理としては, 直交するベクトルは可逆な合成が可能であるという性質を利用している.  
 これにより, FDMの欠点である占有周波数帯域が大きくなるという問題を改善したことで通信効率の高いマルチキャリア通信を実現している.  
@@ -44,14 +44,14 @@ OFDM(Orthogonal Frequency Division Multiplexing)は日本語訳で"直交周波�
 OFDMの実用化の際にサブキャリアに変調を加えることで通信効率・速度が向上するという説明をしたが, ここではその仕組みについて説明する.  
 QAM(Quadrature Amplitude Modulation)は日本語で直行位相振幅変調と言い, 位相の直交する電波を合成し, 振幅成分も細分化することで同じ周波数成分を持つ電波で複数のビットを表現することができるようになる変調技術である.  
 
-<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/1cfd3e03-1bf0-4474-9fd6-7bd2b0d1ff64">
+<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/1cfd3e03-1bf0-4474-9fd6-7bd2b0d1ff64">  
 
 上の例では, 位相と振幅で４つづつ細分化することで，全16状態を表現することができるようにしている.  
 これをサブキャリア単位で適用することで，一つのサブキャリアで複数の状態を表現でき, それにより通信効率がさらに向上する.  
 
 ### 2.2 MIMO(マイモ)
 
-<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/5862fe9e-0ff2-4ad1-b2ce-d6babb4a3600">
+<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/5862fe9e-0ff2-4ad1-b2ce-d6babb4a3600">  
 
 IEEE 802.11n規格から初めて採用された通信方式であり, 複数のアンテナを用いて通信を行う方式である.  
 これにより, 同じ各アンテナでマルチキャリア通信を行うことで, 更なる多重化を実現している.  
@@ -64,7 +64,7 @@ OFDMはマルチキャリア通信を実現するための手法の一つであ�
 
 ### 3.2 TDM(時間分割多重方式)
 
-<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/97f511ed-de75-4ee4-bd83-13b0a64da66b">
+<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/97f511ed-de75-4ee4-bd83-13b0a64da66b">  
 
 通信世代では，2Gにあたる多重化方式である.  
 時間次元を利用して，サブキャリアを配置することで多重化を実現している.  
@@ -72,7 +72,7 @@ OFDMはマルチキャリア通信を実現するための手法の一つであ�
 
 ### 3.3 CDM(符号分割多重方式)
 
-<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/18a9d1f8-9151-454d-95ec-8061fc4b121a">
+<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/18a9d1f8-9151-454d-95ec-8061fc4b121a">  
 
 通信世代では，3Gにあたる通信方式である.  
 符合を付与することでサブキャリアを識別し, 多重化を実現する.  
@@ -81,7 +81,7 @@ OFDMはマルチキャリア通信を実現するための手法の一つであ�
 
 ### 3.4 NOM(非直行多重方式)
 
-<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/4f0253fd-7179-4d82-8542-c4731deb5831">
+<img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/4f0253fd-7179-4d82-8542-c4731deb5831">  
 
 通信世代では，5Gにあたる通信方式である.  
 これはサブキャリアごとの干渉を許容する通信方式である.  
