@@ -20,6 +20,7 @@ OFDMはマルチキャリア通信という通信方式に包含される通信�
 
 ### 1.2 FDM(周波数分割多重方式)
 まず，OFDMの基本となる多重化方式であるFDMという通信方式について説明する.  
+
 <img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/c69b7bc0-f1bf-4e53-9021-23a1a3cfe1a1">
 
 FDM方式は，サブキャリアが持つノイズが，他のサブキャリアに影響を与えないように、サブキャリアの間隔を十分に空けて配置する多重化方式である.  
@@ -30,6 +31,7 @@ FDM方式は，サブキャリアが持つノイズが，他のサブキャリ�
 本題のOFDMについて説明する. OFDMは完結にいうとFDMの多重化方式を改良したマルチキャリア通信方式と言える.  
 OFDM(Orthogonal Frequency Division Multiplexing)は日本語訳で"直交周波数分割多重"という意味であり, その名の通りFDMのサブキャリアの配置に直交の性質を利用したものである.  
 ここでいう直交とは, サブキャリア同士が持つノイズのピークが0になる地点に，他のサブキャリア周波数のピークが来るような状態を周波数成分が直交していると言う.  
+
 <img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/1d02c02b-d688-478b-9fbb-ac3835688976">
 
 原理としては, 直交するベクトルは可逆な合成が可能であるという性質を利用している.  
@@ -41,12 +43,14 @@ OFDM(Orthogonal Frequency Division Multiplexing)は日本語訳で"直交周波�
 ### 2.1 QAM(直交位相振幅変調)
 OFDMの実用化の際にサブキャリアに変調を加えることで通信効率・速度が向上するという説明をしたが, ここではその仕組みについて説明する.  
 QAM(Quadrature Amplitude Modulation)は日本語で直行位相振幅変調と言い, 位相の直交する電波を合成し, 振幅成分も細分化することで同じ周波数成分を持つ電波で複数のビットを表現することができるようになる変調技術である.  
+
 <img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/1cfd3e03-1bf0-4474-9fd6-7bd2b0d1ff64">
 
 上の例では, 位相と振幅で４つづつ細分化することで，全16状態を表現することができるようにしている.  
 これをサブキャリア単位で適用することで，一つのサブキャリアで複数の状態を表現でき, それにより通信効率がさらに向上する.  
 
 ### 2.2 MIMO(マイモ)
+
 <img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/5862fe9e-0ff2-4ad1-b2ce-d6babb4a3600">
 
 IEEE 802.11n規格から初めて採用された通信方式であり, 複数のアンテナを用いて通信を行う方式である.  
@@ -59,6 +63,7 @@ OFDMはマルチキャリア通信を実現するための手法の一つであ�
 また, QAMという変調方式を適用することでOFDMで扱うことのできるビット数を増加させ, 通信効率・速度を向上させることで実用化されている.  
 
 ### 3.2 TDM(時間分割多重方式)
+
 <img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/97f511ed-de75-4ee4-bd83-13b0a64da66b">
 
 通信世代では，2Gにあたる多重化方式である.  
@@ -66,6 +71,7 @@ OFDMはマルチキャリア通信を実現するための手法の一つであ�
 短い時間で各チャンネルの通信時間を切り替えることで多重化通信を実現し, FDMよりも効率良い通信を可能にした.  
 
 ### 3.3 CDM(符号分割多重方式)
+
 <img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/18a9d1f8-9151-454d-95ec-8061fc4b121a">
 
 通信世代では，3Gにあたる通信方式である.  
@@ -74,6 +80,7 @@ OFDMはマルチキャリア通信を実現するための手法の一つであ�
 ※アルゴリズムが難しいため，ここではあまり詳しい説明はできない、、
 
 ### 3.4 NOM(非直行多重方式)
+
 <img width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/4f0253fd-7179-4d82-8542-c4731deb5831">
 
 通信世代では，5Gにあたる通信方式である.  
