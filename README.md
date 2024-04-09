@@ -3,10 +3,12 @@
 ### 1.1 マルチキャリア通信
 OFDMはマルチキャリア通信という通信方式に包含される通信規格の一つである.  
 マルチキャリア通信方式とは, 搬送波(キャリア)と呼ばれるデータ伝達に使用される電波を複数用いることで, 同時に複数の通信を実現する通信方式のことである.  
- <img align=center width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/ee51f589-39fd-4ac9-a233-777b65ba4d69">
+ 
+<img align=center width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/ee51f589-39fd-4ac9-a233-777b65ba4d69">
  
 搬送波を複数に分割し, 副搬送波(サブキャリア)として多重に送信することで送信速度の向上が期待できる．  
 欠点としては, 周波数の占有帯域が大きくなり通信方式によっては通信効率が悪くなってしまう場合がある.  
+
 <img align=center width="500" alt="image" src="https://github.com/haradakaito/OFDM/assets/75819611/e7fab41a-5ce0-4c07-9a53-de6c8d6b4217">
 
 マルチキャリア通信において分割されたサブキャリアは, 以下の図に示すように，異なる周波数特性を持つように分割される.  
